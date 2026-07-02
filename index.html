@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Readify - Your premier online bookstore">
+    <title>Readify - Online Bookstore</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/src/css/variables.css">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/utilities.css">
+    <link rel="stylesheet" href="/src/css/components.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="app">
+        <header id="header" role="banner"></header>
+        <main id="main-content" role="main"></main>
+        <footer id="footer" role="contentinfo"></footer>
+    </div>
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+    <div id="overlay" class="overlay hidden" aria-hidden="true"></div>
+    <aside id="cart-drawer" class="drawer" aria-label="Shopping cart">
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <h2>Shopping Cart</h2><button class="drawer-close">&times;</button></div>
+            <div id="cart-items" class="drawer-body"></div>
+            <div id="cart-footer" class="drawer-footer"></div>
+        </div>
+    </aside>
+    <aside id="wishlist-drawer" class="drawer" aria-label="Wishlist">
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <h2>My Wishlist</h2><button class="drawer-close">&times;</button></div>
+            <div id="wishlist-items" class="drawer-body"></div>
+        </div>
+    </aside>
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
